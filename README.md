@@ -1,1 +1,1 @@
-# EarthQuakeAPi
+Simple example of Calling the https://earthquake.usgs.gov/ API
