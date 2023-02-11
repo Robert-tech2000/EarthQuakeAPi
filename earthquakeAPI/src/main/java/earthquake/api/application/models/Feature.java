@@ -10,6 +10,10 @@ public class Feature {
 	public String id;
 	public Geometry geometry;
 
+	public Properties getProperties() {
+		return properties;
+	}
+
 	static class Geometry {
 		public String type;
 		public List<Double> coordinates = new ArrayList<>();

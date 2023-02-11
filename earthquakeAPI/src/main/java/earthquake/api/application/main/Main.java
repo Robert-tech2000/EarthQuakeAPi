@@ -3,7 +3,6 @@ package earthquake.api.application.main;
 import java.io.IOException;
 import java.util.Scanner;
 
-import earthquake.api.application.models.Root;
 import earthquake.api.application.utils.RootUtil;
 
 public class Main {
@@ -23,13 +22,11 @@ public class Main {
 		while (true) {
 			line = userInput.nextLine();
 			if (line.equalsIgnoreCase("exit")) {
-				System.out.println("Console exited.");
+				System.out.println("Console closed.");
 				userInput.close();
 				break;
 			}
-
-			Root root = RootUtil.createNewRootObjectFromUserInput(line);
-			boolean hehe = true;
+			RootUtil.printEarthQuakeEvents(line);
 		}
 	}
 }

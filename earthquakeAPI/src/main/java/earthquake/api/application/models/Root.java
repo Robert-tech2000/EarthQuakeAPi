@@ -10,6 +10,10 @@ public class Root {
 	public ArrayList<Feature> features;
 	public List<Double> bbox = new ArrayList<>();
 
+	public ArrayList<Feature> getFeatures() {
+		return this.features;
+	}
+
 	public class Metadata {
 		public long generated;
 		public String url;
